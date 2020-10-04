@@ -1,0 +1,56 @@
+<!-- 대부분의 웹 서버가 디폴트로 index.html을 찾도록 설정되어있다
+    그래서 이름은 index.html이라고 해준것이다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <!-- 자식 엘리먼트를 만들 때는 --를 사용하거나 __를 사용해서 읽기 쉽게 한다. -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>//
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, Log in with your emial or phone number.
+      </p>
+      <!-- 긴 문장을 적을 때는 p태그를 사용해주도록 하자 -->
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <!-- JavaScript는 항상 마지막에 있어야한다. body태그를 닫기 직전에 말이다. -->
+
+    <div id="no-mobile">
+      <span>Your screen is too big </span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/d064fa3b9f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!-- form의 중요한 속성중 action 과 method가 있는데
+    action은 어떤 페이지로 data를 보낼건지 지정하는 것이고
+    method는 어떤 방식으로 보낼지 결정하는 것 보내는 방법에는
+    get과 post가 있다
+-->

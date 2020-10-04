@@ -1,0 +1,27 @@
+/* google font에서 글씨체를 갖고오면 head에 넣는 것보다는 css파일에 import하는게 더 낫다. */
+@import "reset.css";
+@import "variables.css";
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "screens/login.css";
+@import "components/screen-header.css";
+@import "screens/friends.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "screens/find.css";
+@import "chats.css";
+@import "screens/more.css";
+@import "components/alt-screen-header.css";
+@import "screens/settings.css";
+@import "screens/chating.css";
+@import "components/no-mobile.css";
+/* 공통적으로 있는 요소들은 따로 파일을 만들어서 쓴다. */
+/* import 할 때 순서를 지켜주는 건 정말 중요하다  
+reset -->  variables  --> 요소들 순으로*/
+/* html 파일에 많은 link를 쓰는건 별로 좋지 않다 그러니 reset.css도 여기에 import해준다. */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2e363e;
+  /* vsc 에서는 따로 링크를 안 불러와도 font-family를 쓸 수 있다. */
+}
